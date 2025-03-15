@@ -68,6 +68,11 @@ export const projectsData = [
   },
 ] as const;
 
+export const aboutWriteUp = `I'm a Year 2 Computer Science undergraduate at the National University of Singapore. 
+I'm passionate about building products that make a difference. 
+I have experience in web development, mobile app development, and data analysis. 
+I'm currently seeking internship opportunities in software engineering.`;
+
 export const skillsData = [
   "Java",
   "Python",
