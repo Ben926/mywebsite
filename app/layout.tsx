@@ -3,8 +3,9 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
-const inter = Inter({ subsets: ["latin"]})
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Benjamin Koh | Personal Portfolio",
@@ -20,15 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} relative h-[5000px] pt-20 sm:pt-20 bg-slate-50 dark:bg-black`}>
-      <ThemeProvider
+        <ActiveSectionContextProvider>
+          <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-        <Header />
-        {children}
-        </ThemeProvider>
+            <Header />
+            {children}
+          </ThemeProvider>
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

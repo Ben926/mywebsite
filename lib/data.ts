@@ -51,27 +51,28 @@ export const projectsData = [
   {
     title: "Custom Crossword Web Game",
     description:
-      "Built a daily crossword game based on Gen Alpha slang using Scala, Python and React. Won Best Polyglot Hack at NUS Hack&Roll 2025. Reached 500+ daily active users globally.",
+      "A daily crossword game with brain-rot language",
     tags: ["Scala", "Python", "React", "Game Development", "Full-Stack"],
+    imageUrl: "/vercel.svg",
   },
   {
     title: "Group Expense Manager Bot",
     description:
-      "Built a Telegram bot for managing group expenses using Python and Heroku. Features include expense tracking, custom splits, debt simplification, and receipt image recognition.",
+      "A telegram bot for managing group expenses, splits and debts.",
     tags: ["Python", "Heroku", "Telegram API", "Image Recognition", "Backend"],
+    imageUrl: "/vercel.svg",
   },
   {
     title: "Personal Expense Tracker",
     description:
-      "Developed a cross-platform mobile app for expense tracking with features like budget planning, automated recurring transactions, and real-time stock updates via CoinGecko API.",
+      "Developed a cross-platform mobile app for personal expense tracking and budgeting.",
     tags: ["React Native", "Expo", "Node.js", "Jest", "CoinGecko API"],
+    imageUrl: "/vercel.svg",
   },
 ] as const;
 
-export const aboutWriteUp = `I'm a Year 2 Computer Science undergraduate at the National University of Singapore. 
-I'm passionate about building products that make a difference. 
-I have experience in web development, mobile app development, and data analysis. 
-I'm currently seeking internship opportunities in software engineering.`;
+export const aboutWriteUp = "I am a Year 2 Computer Science undergraduate at the National University of Singapore." + 
+"I am passionate about building products that make a difference. I have experience in full-stack development, mobile app development, and data analysis. I am currently seeking internship opportunities in software engineering and data science.";
 
 export const skillsData = [
   "Java",
