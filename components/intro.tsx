@@ -1,21 +1,23 @@
 "use client";
 
-import React from 'react';
+import React, {useRef} from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
+import { FaGithubSquare, FaReact } from 'react-icons/fa';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { introWriteUp, aboutWriteUp } from '@/lib/data';
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
-import { HeroHighlight, Highlight } from './ui/hero-highlights';
+import { Highlight } from './ui/hero-highlights';
+import useFireWork from "react-use-firework";
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.75);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+    const fireworkRef = useRef(null);
+    useFireWork(fireworkRef, {count: 100, randomColor: true},);
+
     return (
         <section ref={ref} id="home" className="mb-10 max-w-[45rem] leading-8 sm:mb-15 scroll-mt-28 py-5">
             <div className="flex items-center justify-center">
@@ -41,14 +43,16 @@ export default function Intro() {
                 </div>
             </div>
             <motion.h1
-                className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl justify-center text-center"
+                className="mb-10 mt-4 px-4 text-2xl !leading-[1.5] sm:text-4xl justify-center text-center"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                Hello! I'm Benjamin, a student with a{" "}
-                <Highlight className="text-black dark:text-white">
-                    love for programming :)
+                Hello! I'm Benjamin, and I {" "}
+                <div ref ={fireworkRef} className="inline-block">
+                <Highlight className="text-black dark:text-white bold">
+                    code.
                 </Highlight>
+                </div>
             </motion.h1>
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

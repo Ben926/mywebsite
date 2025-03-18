@@ -13,7 +13,7 @@ import SectionHeading from "./section-heading";
 import Image from "next/image";
 
 export default function ExperiencesTimeline() {
-    const { ref } = useSectionInView("Experience");
+    const { ref } = useSectionInView("Experience", 0.5);
 
     return (    
         <motion.section 

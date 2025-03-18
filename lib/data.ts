@@ -1,6 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap } from "react-icons/lu";
 export const links = [
   {
     name: "Home",
@@ -30,8 +27,6 @@ export const links = [
 
 export const aboutWriteUp = "I am a Year 2 Computer Science undergraduate at the National University of Singapore." + 
 "I am passionate about building products that make a difference. I have experience in full-stack development, mobile app development, and data analysis. I am currently seeking internship opportunities in software engineering and data science.";
-
-export const introWriteUp = "Hello! I'm Benjamin, a student with a love for programming :)"
 
 
 export const experiencesData = [
@@ -75,25 +70,34 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Custom Crossword Web Game",
-    description:
-      "A daily crossword game incorporating brain-rot language.",
-    tags: ["Scala", "Python", "React", "Game Development", "Full-Stack"],
+    title: "Gyatword",
+    description: "A crossword web game incorporating brain-rot language.",
+    tags: ["Backend Developer", "Full Stack Web Game"],
+    techStack: [ "supabase", "docker", "python", "reactjs", "typescript","tailwindcss", "nodejs", "git"],
     imageUrl: "/gyatword-ss.jpg",
+    longDescription: "Built on Python and React, Gyatword is a daily refresh, full stack web crossword game using \'brainrot\'" +
+    " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and serves a reached a daily user high of over 500 players!",
+    websiteURL: "https://gyatword.com",
   },
   {
-    title: "Group Expense Manager Bot",
-    description:
-      "A telegram bot for managing group expenses, splits and debts.",
-    tags: ["Python", "Heroku", "Telegram API", "Image Recognition", "Backend"],
-    imageUrl: "/vercel.svg",
+    title: "CoconutSplit",
+    description: "A telegram bot for managing group expenses, splits and debts.",
+    tags: ["Backend Developer", "Telegram Bot"],
+    techStack: ["python", "supabase", "docker", "git", "heroku"],
+    imageUrl: "/gyatword-ss.jpg",
+    longDescription: "Built on Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
+    + "\n\nIt also incorporates OCR technology to scan receipts and automatically add expenses.",
+    websiteURL: "https://coconutsplit-web.vercel.app"
   },
   {
-    title: "Personal Expense Tracker",
-    description:
-      "A cross-platform mobile app for personal expense tracking and budgeting.",
-    tags: ["React Native", "Expo", "Node.js", "Jest", "CoinGecko API"],
-    imageUrl: "/spendsense-ss.jpeg",
+    title: "SpendSense",
+    description: "A cross-platform mobile app for personal expense tracking and budgeting.",
+    tags: ["Full Stack Developer", "Mobile Development"],
+    techStack: ["reactjs", "typescript", "supabase", "jest", "git"],
+    imageUrl: "/gyatword-ss.jpg",
+    longDescription: "Built on React Native, SpenseSense is a cross-platform mobile app that helps you track your personal expenses, manage and visualise spending habits, access real time stock updates and more."
+    + " It aims to help students build financial literacy and responsibility.",
+    websiteURL: ""
   },
 ] as const;
 
