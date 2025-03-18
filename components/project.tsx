@@ -6,6 +6,7 @@ import Image from "next/image";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { Dialog } from "@headlessui/react";
 import Icon from 'tech-stack-icons';
+import { TechIcon } from "./techicon";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -155,7 +156,7 @@ export default function Project({
                                   key={index}
                                   className="flex"
                                 >
-                                  <Icon name={tech} className="w-10 h-10" />
+                                  <TechIcon name={tech} />
                                 </li>
                               ))}
                             </ul>

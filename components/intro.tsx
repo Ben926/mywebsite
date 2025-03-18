@@ -1,22 +1,34 @@
 "use client";
 
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare, FaReact } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { Highlight } from './ui/hero-highlights';
 import useFireWork from "react-use-firework";
 
+// Add type for firework options
+type FireworkOptions = {
+  count: number;
+  randomColor: boolean;
+};
+
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.75);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-    const fireworkRef = useRef(null);
-    useFireWork(fireworkRef, {count: 100, randomColor: true},);
+    const fireworkRef = useRef<HTMLDivElement | null>(null);
+    
+    const fireworkOptions: FireworkOptions = {
+      count: 100,
+      randomColor: true
+    };
+    
+    useFireWork(fireworkRef as React.RefObject<HTMLElement>, fireworkOptions);
 
     return (
         <section ref={ref} id="home" className="mb-10 max-w-[45rem] leading-8 sm:mb-15 scroll-mt-28 py-5">
@@ -80,7 +92,6 @@ export default function Intro() {
                     href="/CV_Benjamin_Koh.pdf"
                     download
                 >
-                    Download CV{" "}
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 

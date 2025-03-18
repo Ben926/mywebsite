@@ -16,8 +16,8 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: "Technologies",
+    hash: "#technologies",
   },
   {
     name: "Contact",
@@ -85,7 +85,18 @@ export const projectsData = [
     title: "Gyatword",
     description: "A crossword web game incorporating brain-rot language.",
     tags: ["Backend Developer", "Full Stack Web Game"],
-    techStack: [ "supabase", "docker", "python", "reactjs", "typescript","tailwindcss", "nodejs", "git"],
+    techStack: [
+      "Supabase",
+      "Docker",
+      "Scala",  
+      "Python",
+      "FastAPI",   
+      "React",  
+      "TypeScript", 
+      "Tailwind CSS", 
+      "Node.JS",   
+      "Git",      
+    ],
     imageUrl: "/gyatword-ss.jpg",
     longDescription: "Built on Python and React, Gyatword is a daily refresh, full stack web crossword game using \'brainrot\'" +
     " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and a reached a daily user high of over 500 players!",
@@ -95,9 +106,16 @@ export const projectsData = [
     title: "CoconutSplit",
     description: "A telegram bot for managing group expenses, splits and debts.",
     tags: ["Backend Developer", "Telegram Bot"],
-    techStack: ["python", "supabase", "docker", "git", "heroku"],
+    techStack: [
+      "Python",
+      "FastAPI",
+      "Supabase",
+      "Docker",
+      "Git",
+      "Heroku"
+    ],
     imageUrl: "/gyatword-ss.jpg",
-    longDescription: "Built on Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
+    longDescription: "Built with Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
     + "\n\nIt also incorporates OCR technology to scan receipts and automatically add expenses.",
     websiteURL: "https://coconutsplit-web.vercel.app"
   },
@@ -105,34 +123,54 @@ export const projectsData = [
     title: "SpendSense",
     description: "A cross-platform mobile app for personal expense tracking and budgeting.",
     tags: ["Full Stack Developer", "Mobile Development"],
-    techStack: ["reactjs", "typescript", "supabase", "jest", "git"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Supabase",
+      "Jest",
+      "Git"
+    ],
     imageUrl: "/gyatword-ss.jpg",
-    longDescription: "Built on React Native, SpenseSense is a cross-platform mobile app that helps you track your personal expenses, manage and visualise spending habits, access real time stock updates and more."
+    longDescription: "Built with React Native, SpenseSense is a cross-platform mobile app that helps you track your personal expenses, manage and visualise spending habits, access real time stock updates and more."
     + " It aims to help students build financial literacy and responsibility.",
     websiteURL: ""
   },
+  {
+    title: "Portfolio Website",
+    description: "This website itself!",
+    tags: ["Frontend Developer", "Porfolio"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel",
+      "Git"
+    ],
+    imageUrl: "/gyatword-ss.jpg",
+    longDescription: "Built with NextJS and Tailwind CSS, this portfolio website is a demonstration of my frontend development abilities!" + 
+    " \n\nVarious React libraries were utilised to design the website, such as Framer Motion and ThreeJS.",
+    websiteURL: ""
+  }
 ] as const;
 
-
-export const skillsData = [
-  "Java",
-  "Python",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "React Native",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind CSS",
-  "Pytorch",
-  "Numpy",
-  "Framer Motion",
-  "Supabase",
-  "Jest",
-  "Heroku",
-  "Vercel",
-  "Expo",
-] as const;
+export const skillsData = {
+  languages: {
+    title: "Languages",
+    items: [ "Python", "JavaScript", "TypeScript", "Java", "C"]
+  },
+  frameworks: {
+    title: "Frameworks/Libraries",
+    items: [ "React", "Next.js", "Tailwind CSS"]
+  },
+  tools: {
+    title: "Tools",
+    items: [ "Git", "Docker", "Node.js", "Supabase"
+    ]
+  },
+  ml: {
+    title: "ML & Data",
+    items: [ "Pytorch", "Numpy"
+    ]
+  }
+} as const;

@@ -5,6 +5,7 @@ import SectionHeading from "@/components/section-heading";
 import { motion } from "framer-motion";
 import { aboutWriteUp } from '@/lib/data';
 import { useSectionInView } from "@/lib/hooks";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 export default function About() {
     const { ref } = useSectionInView("About");
