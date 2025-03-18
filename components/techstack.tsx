@@ -16,12 +16,12 @@ const containerVariants = {
 };
 
 const skillVariants = {
-  hidden: { 
+  hidden: {
     opacity: 0,
     y: 100,
     scale: 0.8
   },
-  visible: { 
+  visible: {
     opacity: 1,
     y: 0,
     scale: 1,
@@ -37,15 +37,15 @@ export default function TechStack() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {Object.entries(skillsData).map(([key, category], categoryIndex) => (
-        <motion.div 
-          key={key} 
+        <motion.div
+          key={key}
           className="flex flex-col gap-3"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.h3 
+          <motion.h3
             variants={skillVariants}
             className="text-lg font-semibold capitalize mb-2"
           >
@@ -64,7 +64,16 @@ export default function TechStack() {
               >
                 <div className="flex items-center justify-between w-full px-4 py-2">
                   <span className="text-sm font-medium">{skill}</span>
-                  <TechIcon name={skill} />
+                  <motion.div whileHover={{
+                    x: [-2, 2, -2, 2, 0],
+                    y: [-5, 0, -5],
+                  }}
+                    transition={{
+                      duration: 0.6,
+                      repeat: Infinity
+                    }}>
+                    <TechIcon name={skill} />
+                  </ motion.div>
                 </div>
               </Button>
             </motion.div>

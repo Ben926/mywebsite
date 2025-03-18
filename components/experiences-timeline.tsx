@@ -7,7 +7,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { experiencesData, experiencesWriteUp } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
@@ -19,9 +19,12 @@ export default function ExperiencesTimeline() {
     <motion.section
       ref={ref}
       id="experience"
-      className="scroll-mt-28 mb-28 sm:mb-40"
+      className="scroll-mt-16 mb-24 sm:mb-30 max-w-[60rem]"
     >
       <SectionHeading>Experience </SectionHeading>
+      <p className="text-center leading-8 mb-3 ">
+        {experiencesWriteUp}
+      </p>
       <VerticalTimeline
         lineColor="#e5e7eb"
         className={`vertical-timeline `}

@@ -25,9 +25,91 @@ export const links = [
   },
 ] as const;
 
-export const aboutWriteUp = "I am a Year 2 Computer Science undergraduate at the National University of Singapore." + 
-"I am passionate about building products that make a difference. I have experience in full-stack development, mobile app development, and data analysis. I am currently seeking internship opportunities in software engineering and data science.";
+export const aboutWriteUp = "I’m a motivated Computer Science undergraduate at NUS with a passion for building products that make a difference. With experience in full-stack development, mobile apps, and data analysis, I enjoy using technology to create practical, user-centric solutions. I’m always eager to learn, experiment, and bring meaningful ideas to life."
 
+export const projectWriteUp = "Outside of academics and work, I love using technology to build things." +
+        "These projects are personal endeavours for learning and enjoyment—driven by curiosity and a passion for creating useful," +
+        " interesting, or just downright fun."
+
+
+        export const projectsData = [
+          {
+            title: "Gyatword",
+            description: "A crossword web game incorporating brain-rot language.",
+            tags: ["Backend Developer", "Full Stack Web Game"],
+            techStack: [
+              "Supabase",
+              "Docker",
+              "Scala",  
+              "Python",
+              "FastAPI",   
+              "React",  
+              "TypeScript", 
+              "Tailwind CSS", 
+              "Node.JS",   
+              "Git",      
+            ],
+            imageUrl: "/gyatword-ss.jpg",
+            longDescription: "Built on Python and React, Gyatword is a daily refresh, full stack web crossword game using \'brainrot\'" +
+            " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and a reached a daily user high of over 500 players!",
+            websiteURL: "https://gyatword.com",
+          },
+          {
+            title: "CoconutSplit",
+            description: "A telegram bot for managing group expenses, splits and debts.",
+            tags: ["Backend Developer", "Telegram Bot"],
+            techStack: [
+              "Python",
+              "FastAPI",
+              "Supabase",
+              "Docker",
+              "Git",
+              "Heroku"
+            ],
+            imageUrl: "/gyatword-ss.jpg",
+            longDescription: "Built with Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
+            + "\n\nIt also incorporates OCR technology to scan receipts and automatically add expenses.",
+            websiteURL: "https://coconutsplit-web.vercel.app"
+          },
+          {
+            title: "SpendSense",
+            description: "A cross-platform mobile app for personal expense tracking and budgeting.",
+            tags: ["Full Stack Developer", "Mobile Development"],
+            techStack: [
+              "React",
+              "TypeScript",
+              "Node.js",
+              "Supabase",
+              "Jest",
+              "Git"
+            ],
+            imageUrl: "/gyatword-ss.jpg",
+            longDescription: "Built with React Native, SpenseSense is a cross-platform mobile app that helps you track your personal expenses, manage and visualise spending habits, access real time stock updates and more."
+            + " It aims to help students build financial literacy and responsibility.",
+            websiteURL: ""
+          },
+          {
+            title: "Portfolio Website",
+            description: "This website itself!",
+            tags: ["Frontend Developer", "Porfolio"],
+            techStack: [
+              "React",
+              "TypeScript",
+              "Next.js",
+              "Node.js",
+              "Tailwind CSS",
+              "Vercel",
+              "Git"
+            ],
+            imageUrl: "/gyatword-ss.jpg",
+            longDescription: "Built with NextJS and Tailwind CSS, this portfolio website is a demonstration of my frontend development abilities!" + 
+            " \n\nVarious React libraries were utilised to design the website, such as Framer Motion and ThreeJS.",
+            websiteURL: ""
+          }
+        ] as const;
+
+export const experiencesWriteUp = "Each of these experiences has shaped me into a more versatile developer and problem-solver. " +
+"They’ve allowed me to sharpen both my technical skills and my ability to collaborate, adapt, and deliver real-world solutions."
 
 export const experiencesData = [
   {
@@ -35,9 +117,7 @@ export const experiencesData = [
     title: "Software Developer Intern",
     location: "Accenture, Singapore",
     description: [
-      "Built applications using Pega, Python, React and Java",
-      "Led data migration and technical architecture design",
-      "Implemented automated testing frameworks"
+      "To be continued..."
     ],
     date: "June 2025 - Present",
     icon: "/accenture-logo.png",
@@ -80,79 +160,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
-  {
-    title: "Gyatword",
-    description: "A crossword web game incorporating brain-rot language.",
-    tags: ["Backend Developer", "Full Stack Web Game"],
-    techStack: [
-      "Supabase",
-      "Docker",
-      "Scala",  
-      "Python",
-      "FastAPI",   
-      "React",  
-      "TypeScript", 
-      "Tailwind CSS", 
-      "Node.JS",   
-      "Git",      
-    ],
-    imageUrl: "/gyatword-ss.jpg",
-    longDescription: "Built on Python and React, Gyatword is a daily refresh, full stack web crossword game using \'brainrot\'" +
-    " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and a reached a daily user high of over 500 players!",
-    websiteURL: "https://gyatword.com",
-  },
-  {
-    title: "CoconutSplit",
-    description: "A telegram bot for managing group expenses, splits and debts.",
-    tags: ["Backend Developer", "Telegram Bot"],
-    techStack: [
-      "Python",
-      "FastAPI",
-      "Supabase",
-      "Docker",
-      "Git",
-      "Heroku"
-    ],
-    imageUrl: "/gyatword-ss.jpg",
-    longDescription: "Built with Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
-    + "\n\nIt also incorporates OCR technology to scan receipts and automatically add expenses.",
-    websiteURL: "https://coconutsplit-web.vercel.app"
-  },
-  {
-    title: "SpendSense",
-    description: "A cross-platform mobile app for personal expense tracking and budgeting.",
-    tags: ["Full Stack Developer", "Mobile Development"],
-    techStack: [
-      "React",
-      "TypeScript",
-      "Supabase",
-      "Jest",
-      "Git"
-    ],
-    imageUrl: "/gyatword-ss.jpg",
-    longDescription: "Built with React Native, SpenseSense is a cross-platform mobile app that helps you track your personal expenses, manage and visualise spending habits, access real time stock updates and more."
-    + " It aims to help students build financial literacy and responsibility.",
-    websiteURL: ""
-  },
-  {
-    title: "Portfolio Website",
-    description: "This website itself!",
-    tags: ["Frontend Developer", "Porfolio"],
-    techStack: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Tailwind CSS",
-      "Vercel",
-      "Git"
-    ],
-    imageUrl: "/gyatword-ss.jpg",
-    longDescription: "Built with NextJS and Tailwind CSS, this portfolio website is a demonstration of my frontend development abilities!" + 
-    " \n\nVarious React libraries were utilised to design the website, such as Framer Motion and ThreeJS.",
-    websiteURL: ""
-  }
-] as const;
+export const technologiesWriteUp = "Some of the technologies I am familiar with through projects, coursework and work experiences."
 
 export const skillsData = {
   languages: {
