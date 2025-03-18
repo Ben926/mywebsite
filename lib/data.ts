@@ -34,8 +34,11 @@ export const experiencesData = [
     id: 1,
     title: "Software Developer Intern",
     location: "Accenture, Singapore",
-    description:
-      "Developed intranet and internet applications leveraging Pega, Python, React and Java. Contributed to data migration, technical architecture design and automation testing initiatives.",
+    description: [
+      "Built applications using Pega, Python, React and Java",
+      "Led data migration and technical architecture design",
+      "Implemented automated testing frameworks"
+    ],
     date: "June 2025 - Present",
     icon: "/accenture-logo.png",
   },
@@ -43,8 +46,11 @@ export const experiencesData = [
     id: 2,
     title: "Undergraduate, Computer Science",
     location: "National University of Singapore",
-    description:
-      "Currently pursuing a Bachelor of Computing (Hons) in Computer Science. First Class Honors with a GPA of 4.92. Achieved Dean's List in Year 1 Semester 2.",
+    description:[
+        "Currently pursuing a Bachelor of Computing (Hons) in Computer Science.\n",
+        "First Class Honors (GPA: 4.92)",
+        "Dean's List for Year 1 Semester 1",
+      ],
     date: "August 2023 - Present",
     icon: "/nus-logo.png",
   },
@@ -53,7 +59,11 @@ export const experiencesData = [
     title: "Freelance Web Developer",
     location: "Locket Allegro, Singapore",
     description:
-      "Built and designed a complete e-commerce website using Shopify, HTML, and CSS for a jewelry business serving 100+ monthly customers. Implemented and optimized the entire online business workflow for seamless user experience.",
+    [
+      "Built e-commerce website using Shopify, HTML and CSS",
+      "Served 100+ monthly customers",
+      "Developed and optimized order processing workflow"
+    ],
     date: "February 2023 - June 2023",
     icon: "/locketallegro-logo.png",
   },
@@ -61,8 +71,10 @@ export const experiencesData = [
     id: 4,
     title: "Business Analyst Intern",
     location: "NCS Pte. Ltd., Singapore",
-    description:
-      "Led User Acceptance Testing for SAP database HR payroll system with 100% test case pass rate. Developed automated Excel templates analyzing millions of payroll records, enabling instant trend analysis and discrepancy detection.",
+    description: [
+      "Led User Acceptance Testing for SAP database HR payroll system with 100% test case pass rate",
+       "Developed automated Excel templates analyzing millions of payroll records for trend analysis and discrepancy detection."
+    ],
     date: "January 2023 - July 2023",
     icon: "/ncs-logo.jpg",
   },
@@ -76,7 +88,7 @@ export const projectsData = [
     techStack: [ "supabase", "docker", "python", "reactjs", "typescript","tailwindcss", "nodejs", "git"],
     imageUrl: "/gyatword-ss.jpg",
     longDescription: "Built on Python and React, Gyatword is a daily refresh, full stack web crossword game using \'brainrot\'" +
-    " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and serves a reached a daily user high of over 500 players!",
+    " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and a reached a daily user high of over 500 players!",
     websiteURL: "https://gyatword.com",
   },
   {
