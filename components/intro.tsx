@@ -9,12 +9,15 @@ import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { introWriteUp, aboutWriteUp } from '@/lib/data';
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
+import { HeroHighlight, Highlight } from './ui/hero-highlights';
 
 export default function Intro() {
-    const { ref } = useSectionInView("Home", 0.5);
+    const { ref } = useSectionInView("Home", 0.75);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     return (
-        <section ref={ref} id="home">
+        <section ref={ref} id="home" className="mb-10 max-w-[45rem] leading-8 sm:mb-15 scroll-mt-28 py-5">
             <div className="flex items-center justify-center">
                 <div className='realtive'>
                     <motion.div
@@ -42,9 +45,10 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <span className="font-bold">Hello, I'm Benjamin.</span> I'm a{" "}
-                <span className="font-bold">Year 2 Computer Science undergraduate</span> with a
-                passion for computing!
+                Hello! I'm Benjamin, a student with a{" "}
+                <Highlight className="text-black dark:text-white">
+                    love for programming :)
+                </Highlight>
             </motion.h1>
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

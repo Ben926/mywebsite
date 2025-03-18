@@ -9,7 +9,7 @@ import { useSectionInView } from "@/lib/hooks";
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
   return (
-    <section id="projects" ref={ref}>
+    <section id="projects" ref={ref} className="mb-10 max-w-[45rem] leading-8 sm:mb-15 scroll-mt-28 py-5">
       <SectionHeading>My projects</SectionHeading>
         <div>
             {projectsData.map((project, index) => (
