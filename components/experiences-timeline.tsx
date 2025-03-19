@@ -20,14 +20,47 @@ export default function ExperiencesTimeline() {
       ref={ref}
       id="experience"
       className="scroll-mt-16 mb-24 sm:mb-30 max-w-[60rem]"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.5,
+        type: "spring",
+        stiffness: 50,
+        damping: 15
+      }}
     >
-      <SectionHeading>Experience </SectionHeading>
-      <p className="text-center leading-8 mb-3 ">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          type: "spring",
+          duration: 0.8,
+          bounce: 0.3
+        }}
+      >
+        <SectionHeading>Experience</SectionHeading>
+      </motion.div>
+
+      <motion.p
+        className="text-center leading-8 mb-3"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          type: "spring",
+          duration: 0.8,
+          bounce: 0.3,
+          delay: 0.2
+        }}
+      >
         {experiencesWriteUp}
-      </p>
+      </motion.p>
+
       <VerticalTimeline
         lineColor="#e5e7eb"
-        className={`vertical-timeline `}
+        className="vertical-timeline"
       >
         {experiencesData.map((item, index) => (
           <VerticalTimelineElement
@@ -64,19 +97,32 @@ export default function ExperiencesTimeline() {
             }}
             position={index % 2 === 0 ? "left" : "right"}
           >
-            <h3 className="font-semibold capitalize text-xl text-gray-900 dark:text-white">
-              {item.title}
-            </h3>
-            <p className="font-normal !mt-1 text-gray-700 dark:text-gray-200 pb-1">
-              {item.location}
-            </p>
-            <div className="">
-              {item.description.map((bullet, index) => (
-                <div key={index} className="flex items-start">
-                  <span className="text-gray-700 dark:text-gray-300 pb-1">• {bullet}</span>
-                </div>
-              ))}
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.2,
+                type: "spring",
+                stiffness: 50,
+                damping: 15
+              }}
+            >
+              <h3 className="font-semibold capitalize text-xl text-gray-900 dark:text-white">
+                {item.title}
+              </h3>
+              <p className="font-normal !mt-1 text-gray-700 dark:text-gray-200 pb-1">
+                {item.location}
+              </p>
+              <div className="">
+                {item.description.map((bullet, bulletIndex) => (
+                  <div key={bulletIndex} className="flex items-start">
+                    <span className="text-gray-700 dark:text-gray-300 pb-1">• {bullet}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

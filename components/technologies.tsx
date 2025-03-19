@@ -21,6 +21,7 @@ export default function Technologies() {
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.175,
           duration: 0.5,
