@@ -62,7 +62,7 @@ export default function Project({
           <Image
             src={imageUrl}
             alt="Project I worked on"
-            className="absolute w-80 sm:block bottom-0 right-0 top-6 rounded-t-lg shadow-2xl
+            className="absolute w-80 sm:block hidden bottom-0 right-0 top-6 rounded-t-lg shadow-2xl
               transition 
               group-hover:scale-[1.04]
               group-hover:-translate-x-3
@@ -89,7 +89,7 @@ export default function Project({
           >
             <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" aria-hidden="true" />
 
-            <div className="fixed inset-0 flex items-center justify-center p-4">
+            <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -110,7 +110,7 @@ export default function Project({
                 }}
                 className="w-full max-w-4xl perspective-1000"
               >
-                <Dialog.Panel className="mx-auto max-w-4xl rounded-2xl bg-white dark:bg-gray-900 p-6 shadow-2xl">
+                <Dialog.Panel className="mx-auto max-w-4xl rounded-2xl bg-white dark:bg-gray-900 p-6 shadow-2xl overflow-y-auto max-h-[90vh]">
                   <div className="relative">
                     <button
                       onClick={() => setIsModalOpen(false)}
