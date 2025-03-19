@@ -4,6 +4,7 @@ import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
+import validator from "validator";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -17,6 +18,13 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid sender email",
     };
   }
+
+  if (!validator.isEmail(senderEmail as string)) {
+    return {
+      error: "Invalid email format",
+    };
+  }
+
   if (!validateString(message, 5000)) {
     return {
       error: "Invalid message",

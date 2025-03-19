@@ -28,8 +28,8 @@ export const links = [
 export const aboutWriteUp = "I’m a motivated Computer Science undergraduate at NUS with a passion for building products that make a difference. With experience in full-stack development, mobile apps, and data analysis, I enjoy using technology to create practical, user-centric solutions. I’m always eager to learn, experiment, and bring meaningful ideas to life."
 
 export const projectWriteUp = "Outside of academics and work, I love using technology to build things." +
-        "These projects are personal endeavours for learning and enjoyment—driven by curiosity and a passion for creating useful," +
-        " interesting, or just downright fun."
+        " These projects are personal endeavours for learning and enjoyment—driven by curiosity and a passion for creating something useful," +
+        " interesting, or just fun :)."
 
 
         export const projectsData = [
@@ -113,7 +113,7 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
         ] as const;
 
 export const experiencesWriteUp = "Each of these experiences has shaped me into a more versatile developer and problem-solver. " +
-"They’ve allowed me to sharpen both my technical skills and my ability to collaborate, adapt, and deliver real-world solutions."
+"They’ve allowed me to sharpen both my technical skills and my ability to work with others, adapt, and deliver real-world solutions."
 
 export const experiencesData = [
   {
@@ -132,8 +132,8 @@ export const experiencesData = [
     location: "National University of Singapore",
     description:[
         "Currently pursuing a Bachelor of Computing (Hons) in Computer Science.\n",
-        "First Class Honors (GPA: 4.92)",
-        "Dean's List for Year 1 Semester 1",
+        "First Class Honors with a GPA of 4.92",
+        "Dean's List for Year 1 Semester 2",
       ],
     date: "August 2023 - Present",
     icon: "/nus-logo.png",
@@ -149,7 +149,7 @@ export const experiencesData = [
       "Developed and optimized order processing workflow"
     ],
     date: "February 2023 - June 2023",
-    icon: "/locketallegro-logo.png",
+    icon: "/computer-icon.png",
   },
   {
     id: 4,
@@ -164,7 +164,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const technologiesWriteUp = "Some of the technologies I am familiar with through projects, coursework and work experiences."
+export const technologiesWriteUp = "Some of the technologies I am familiar with through projects, coursework and work experiences. I'm always hunting for opportunities to expand my skillset and learn new technologies!"
 
 export const skillsData = {
   languages: {

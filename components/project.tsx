@@ -110,7 +110,7 @@ export default function Project({
                 }}
                 className="w-full max-w-4xl perspective-1000"
               >
-                <Dialog.Panel className="mx-auto max-w-4xl rounded-2xl bg-white dark:bg-gray-900 p-6 shadow-2xl overflow-y-auto max-h-[90vh]">
+                <Dialog.Panel className="mx-auto max-w-4xl rounded-2xl bg-white dark:bg-gray-900 p-6 shadow-2xl overflow-y-auto max-h-[70vh]">
                   <div className="relative">
                     <button
                       onClick={() => setIsModalOpen(false)}
