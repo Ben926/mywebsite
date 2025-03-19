@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Projects", 0.4);
   
   return (
     <motion.section 
