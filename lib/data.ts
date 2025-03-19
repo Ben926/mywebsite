@@ -46,7 +46,7 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
               "React",  
               "TypeScript", 
               "Tailwind CSS", 
-              "Node.JS",   
+              "Node.js",   
               "Git",      
             ],
             imageUrl: "/gyatword-ss.jpg",
@@ -178,7 +178,7 @@ export const skillsData = {
   },
   ml: {
     title: "ML & Data",
-    items: [ "Pytorch", "Numpy"
+    items: [ "PyTorch", "NumPy"
     ]
   }
 } as const;
