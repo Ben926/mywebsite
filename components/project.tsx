@@ -5,7 +5,6 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { Dialog } from "@headlessui/react";
-import Icon from 'tech-stack-icons';
 import { TechIcon } from "./techicon";
 
 type ProjectProps = (typeof projectsData)[number];
