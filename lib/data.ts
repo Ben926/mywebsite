@@ -35,7 +35,7 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
         export const projectsData = [
           {
             title: "Gyatword",
-            description: "A crossword web game incorporating brain-rot language.",
+            description: "A custom crossword web game incorporating brain-rot language.",
             tags: ["Backend Developer", "Full Stack Web Game"],
             techStack: [
               "Supabase",
@@ -49,7 +49,8 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
               "Node.js",   
               "Git",      
             ],
-            imageUrl: "/gyatword-ss.jpg",
+            imageUrl: "/gyatword.png",
+            imageUrl2: "/gyatword-puzzle.png",
             longDescription: "Built on Python and React, Gyatword is a daily refresh, full stack web crossword game using \'brainrot\'" +
             " urban slang. \n\nIt won best polygot hack at the NUS Hack & Roll 2025, and a reached a daily user high of over 500 players!",
             websiteURL: "https://gyatword.com",
@@ -66,7 +67,8 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
               "Git",
               "Heroku"
             ],
-            imageUrl: "/gyatword-ss.jpg",
+            imageUrl: "/coconutsplit-logo.jpg",
+            imageUrl2: "/coconutsplit-ss.png",
             longDescription: "Built with Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
             + "\n\nIt also incorporates OCR technology to scan receipts and automatically add expenses.",
             websiteURL: "https://coconutsplit-web.vercel.app"
@@ -74,7 +76,7 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
           {
             title: "SpendSense",
             description: "A cross-platform mobile app for personal expense tracking and budgeting.",
-            tags: ["Full Stack Developer", "Mobile Development"],
+            tags: ["Full Stack Developer", "Mobile App Developer"],
             techStack: [
               "React",
               "TypeScript",
@@ -83,7 +85,8 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
               "Jest",
               "Git"
             ],
-            imageUrl: "/gyatword-ss.jpg",
+            imageUrl: "/spendsense-logo.png",
+            imageUrl2: "/spendsense-app.png",
             longDescription: "Built with React Native, SpenseSense is a cross-platform mobile app that helps you track your personal expenses, manage and visualise spending habits, access real time stock updates and more."
             + " It aims to help students build financial literacy and responsibility.",
             websiteURL: ""
@@ -91,7 +94,7 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
           {
             title: "Portfolio Website",
             description: "This website itself!",
-            tags: ["Frontend Developer", "Porfolio"],
+            tags: ["Frontend Developer", "Web Developer"],
             techStack: [
               "React",
               "TypeScript",
@@ -101,7 +104,8 @@ export const projectWriteUp = "Outside of academics and work, I love using techn
               "Vercel",
               "Git"
             ],
-            imageUrl: "/gyatword-ss.jpg",
+            imageUrl: "/techstackicons/Next.js.png",
+            imageUrl2: "/techstackicons/Next.js.png",
             longDescription: "Built with NextJS and Tailwind CSS, this portfolio website is a demonstration of my frontend development abilities!" + 
             " \n\nVarious React libraries were utilised to design the website, such as Framer Motion and ThreeJS.",
             websiteURL: ""
