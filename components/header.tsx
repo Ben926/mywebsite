@@ -58,7 +58,7 @@ export default function Header() {
         ))}
         {/* Add ModeToggle after navigation links */}
         <motion.li
-          className="h-3/4 flex items-center justify-center relative py-1"
+          className="h-1/4 flex items-center justify-center relative pt-1"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
