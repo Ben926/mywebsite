@@ -73,10 +73,9 @@ export default function ExperiencesTimeline() {
               textAlign: "left",
               padding: "1.3rem 2rem",
               borderRadius: "0.75rem",
-              backdropFilter: "blur(0.5rem)",
             }}
             contentArrowStyle={{
-              borderRight: "0.7rem solid rgba(255, 255, 255, 0.05)",
+              borderRight: "none",
             }}
             date={item.date}
             icon={
