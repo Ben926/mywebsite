@@ -8,7 +8,7 @@ import { technologiesWriteUp } from "@/lib/data";
 import { motion } from "framer-motion";
 
 export default function Technologies() {
-  const { ref } = useSectionInView("Technologies", 1);
+  const { ref } = useSectionInView("Technologies", 0.4);
 
   return (
     <section

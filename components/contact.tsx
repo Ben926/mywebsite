@@ -9,7 +9,7 @@ import SubmitBtn from "@/components/submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact", 1);
+  const { ref } = useSectionInView("Contact", 0.9);
 
   return (
     <motion.section
