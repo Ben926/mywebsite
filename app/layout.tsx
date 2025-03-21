@@ -25,7 +25,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >

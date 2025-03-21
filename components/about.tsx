@@ -11,7 +11,7 @@ export default function About() {
     return (
         <motion.section
             ref={ref}
-            className="mb-24 max-w-[45rem] text-center leading-8 sm:mb-30 scroll-mt-16"
+            className="mb-24 max-w-[45rem] text-center leading-8 sm:mb-30 scroll-mt-16 whitespace-pre-line"
             initial={{ opacity: 0, y: 100 }}  // Changed y to x for side entrance
             whileInView={{ opacity: 1, y: 0 }}  // Changed y to x for side movement
             viewport={{ once: true }}

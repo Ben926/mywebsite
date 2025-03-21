@@ -11,6 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { Highlight } from './ui/hero-highlights';
 import useFireWork from "react-use-firework";
+import toast from "react-hot-toast";
 
 // Add type for firework options
 type FireworkOptions = {
@@ -76,7 +77,7 @@ export default function Intro() {
             >
                 <Link
                     href="#contact"
-                    className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                    className="group dark:bg-white bg-gray-900 text-white dark:text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                     onClick={() => {
                         setActiveSection("Contact");
                         setTimeOfLastClick(Date.now());
@@ -89,8 +90,9 @@ export default function Intro() {
                 <a
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-4 focus:scale-110 hover:scale-110 active:scale-105 
                     transition cursor-pointer borderBlack dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-slate-400"
-                    href="/CV_Benjamin_Koh.pdf"
-                    download
+                    onClick={() => {
+                        {toast("Still working on updating my resume... will upload soon 😅")}
+                    }}
                 >
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
