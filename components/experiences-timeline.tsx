@@ -46,7 +46,7 @@ export default function ExperiencesTimeline() {
 
       <motion.p
         className="text-center leading-8 mb-3"
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{
