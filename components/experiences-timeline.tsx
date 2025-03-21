@@ -11,6 +11,7 @@ import { experiencesData, experiencesWriteUp } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
+import { TechIcon } from "./techicon";
 
 export default function ExperiencesTimeline() {
   const { ref } = useSectionInView("Experience", 0.3);
@@ -121,6 +122,24 @@ export default function ExperiencesTimeline() {
                   </div>
                 ))}
               </div>
+              <ul className="flex flex-wrap gap-3">
+                {item.techStack.map((tech, index) => (
+                  <li
+                    key={index}
+                    className="flex"
+                  >
+                    <motion.div
+                      whileHover={{
+                        y: [0, -10, 0, -5, 0],
+                        transition: { duration: 0.6, ease: "easeOut", repeat: Infinity},
+                      }}
+                      className="transform-gpu" // Added for better performance
+                    >
+                      <TechIcon name={tech} />
+                    </motion.div>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           </VerticalTimelineElement>
         ))}
