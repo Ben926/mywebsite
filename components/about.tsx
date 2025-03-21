@@ -24,7 +24,7 @@ export default function About() {
         >
             <SectionHeading>About me</SectionHeading>
             <motion.p
-                initial={{ opacity: 0, x: 100 }}  // Text comes from opposite direction
+                initial={{ opacity: 0, x: -100 }}  // Text comes from opposite direction
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{
