@@ -28,17 +28,17 @@ export const links = [
 export const placeholders = [
   "Who am I?",
   "What projects have I done?",
-  "What work experiences have I had?",
+  "What experiences have I had?",
   "What is my tech stack?",
   "How do you contact me?",
-  "How to find a job as a CS student?",
+  "How to find a job as a CS major?",
 ];
 
 
 export const aboutWriteUp = "I’m a driven Computer Science student passionate about building impactful products. From full-stack development to mobile apps and web games, I enjoy crafting technology that solves real problems and makes life better! Always eager to learn and collaborate." +
 "\n\nOutside of work, I enjoy keeping fit, playing guitar and travelling!"
 
-export const projectWriteUp = "Many of these projects started out as just tossed around ideas over meals, and have since been brought to life." +
+export const projectWriteUp = "Many of these projects started out as tossed around ideas over meals, and have since been brought to life." +
         " These projects are personal endeavours for learning and enjoyment—driven by curiosity and a passion for creating something useful," +
         " or just fun :)."
 
@@ -115,10 +115,11 @@ export const projectWriteUp = "Many of these projects started out as just tossed
               "Vercel",
               "Git"
             ],
-            imageUrl: "/techstackicons/Next.js.png",
-            imageUrl2: "/techstackicons/Next.js.png",
+            imageUrl: "/portfolio-ss.png",
+            imageUrl2: "/portfolio-ss.png",
             longDescription: "Built with NextJS and Tailwind CSS, this portfolio website is a demonstration of my frontend development abilities!" + 
-            " \n\nVarious React libraries were utilised to design the website, such as Framer Motion for the animations.",
+            " \n\nVarious React libraries were utilised to design the website, such as Framer Motion for the animations." +
+            "\n\nTry clicking the highlighted word 'code' at the top of this website for a little surprise!",
             websiteURL: ""
           }
         ] as const;
@@ -172,7 +173,7 @@ export const experiencesData = [
     location: "NCS Pte. Ltd., Singapore",
     description: [
       "Led User Acceptance Testing for SAP database HR payroll system with 100% test case pass rate",
-       "Developed automated Excel templates analyzing millions of payroll records for trend analysis and discrepancy detection."
+       "Developed automated Excel templates analyzing millions of payroll records for trend analysis and discrepancy detection"
     ],
     date: "January 2023 - July 2023",
     icon: "/ncs-logo.jpg",
