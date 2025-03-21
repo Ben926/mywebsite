@@ -94,6 +94,7 @@ export default function Intro() {
                         {toast("Still working on updating my resume... will upload soon 😅")}
                     }}
                 >
+                    Download CV 
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 

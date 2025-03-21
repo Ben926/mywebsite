@@ -125,7 +125,7 @@ export const projectWriteUp = "Many of these projects started out as tossed arou
         ] as const;
 
 export const experiencesWriteUp = "Each of these experiences has shaped me into a more versatile developer and problem-solver. " +
-"They’ve allowed me to sharpen both my technical skills and my ability to work with others, adapt, and deliver real-world solutions."
+"They’ve allowed me to sharpen my technical skills and my ability to work with others, adapt, and deliver real-world solutions."
 
 export const experiencesData = [
   {
