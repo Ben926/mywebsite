@@ -190,7 +190,7 @@ export const skillsData = {
   },
   frameworks: {
     title: "Frameworks/Libraries",
-    items: [ "React", "Next.js", "Tailwind CSS"]
+    items: [ "React", "Next.js", "Tailwind CSS", "FastAPI"]
   },
   tools: {
     title: "Tools",
