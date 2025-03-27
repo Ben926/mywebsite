@@ -71,18 +71,22 @@ export const projectWriteUp = "Many of these projects started out as tossed arou
             description: "A telegram bot for managing group expenses, splits and debts.",
             tags: ["Backend Developer", "Telegram Bot"],
             techStack: [
-              "Python",
-              "FastAPI",
               "Supabase",
               "Docker",
+              "Python",
+              "FastAPI",
+              "React",
+              "TypeScript",
+              "Next.js",
+              "Tailwind CSS", 
+              "Node.js",   
               "Git",
               "Heroku"
             ],
             imageUrl: "/coconutsplit-logo.jpg",
             imageUrl2: "/coconutsplit-ss.png",
-            longDescription: "Built with Python and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using simple commands."
-            + "\n\nIt also incorporates OCR technology to scan receipts and automatically add expenses.",
-            websiteURL: "https://coconutsplit-web.vercel.app"
+            longDescription: "Built with Python, React and Telegram API, Coconutsplit is a \'Splitwise' alternative that lets you manage group expenses, splits and debts on Telegram using a sleek GUI.",
+            websiteURL: "https://t.me/coconutsplit_bot"
           },
           {
             title: "SpendSense",
@@ -151,7 +155,7 @@ export const experiencesData = [
       ],
     date: "August 2023 - Present",
     icon: "/nus-logo.png",
-    techStack: ["Java", "Python", "C", "JavaScript", "PyTorch", "NumPy"],
+    techStack: ["Java", "Python", "C", "JavaScript", "PyTorch", "NumPy", "scikit-learn"],
   },
   {
     id: 3,
@@ -199,7 +203,7 @@ export const skillsData = {
   },
   ml: {
     title: "ML & Data",
-    items: [ "PyTorch", "NumPy"
+    items: [ "PyTorch", "NumPy", "scikit-learn"
     ]
   }
 } as const;

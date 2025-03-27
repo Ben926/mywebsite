@@ -73,7 +73,7 @@ export default function Project({
               group-even:group-hover:rotate-3
               group-even:left-0"
             width={1200}
-            height={700}
+            height={600}
             quality={95}
             priority={true}
           />
@@ -129,7 +129,7 @@ export default function Project({
                             src={imageUrl2}
                             alt={title}
                             width={400}
-                            height={400}
+                            height={200}
                             className="rounded-xl shadow-lg"
                             quality={100}
                           />
