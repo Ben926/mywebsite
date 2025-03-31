@@ -68,8 +68,8 @@ export const projectWriteUp = "Many of these projects started out as tossed arou
           },
           {
             title: "CoconutSplit",
-            description: "A telegram bot for managing group expenses, splits and debts.",
-            tags: ["Backend Developer", "Telegram Bot"],
+            description: "A telegram bot for easily managing group expenses, splits and debts.",
+            tags: ["Full Stack Developer", "Telegram Bot"],
             techStack: [
               "Supabase",
               "Docker",
